@@ -19,4 +19,5 @@ else:
         count += 1
 final = input(f"The average of your numbers is {float(total / count)}! To see the list of numbers type 'list'.")
 if final == 'list':
+    print("Your numbers are:")
     print(numbers_list)
