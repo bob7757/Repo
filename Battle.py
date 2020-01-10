@@ -112,7 +112,7 @@ while player_1.hit_points > 0 and player_2.hit_points > 0:
             for roll in hit:
                 if roll <= player_2.hit_chance[selected_attack] - player_1.dodge_chance:
                     if selected_attack in mage_attack_names:
-                        damage = player_2.damage[selected_attack] - player_1.magic_defense / 10
+                        damage = player_2.damage[selected_attack] +random.randint(1,3) - player_1.magic_defense / 10
                         player_1.hit_points -= damage
                         print(f"You hit for {damage} damage!")
                         player_1_turn = True
