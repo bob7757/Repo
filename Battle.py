@@ -91,7 +91,7 @@ while player_1.hit_points > 0 and player_2.hit_points > 0:
                         print(f"You hit for {damage} damage!")
                         player_1_turn = False
                     else:
-                        damage = player_1.damage[selected_attack] random.randint(1,3) - player_2.defense / 10
+                        damage = player_1.damage[selected_attack] + random.randint(1,3) - player_2.defense / 10
                         player_2.hit_points -= damage
                         print(f"You hit for {damage} damage!")
                         player_1_turn = False
